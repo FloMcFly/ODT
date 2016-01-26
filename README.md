@@ -1,3 +1,3 @@
-# ODT
+# Office Deployment Tool
 
 README
