@@ -10,7 +10,7 @@
 
   <Display Level="None" AcceptEULA="TRUE" />
 
-  <Logging Path="H:\Office2016\setup" />
+  <Logging Level="Standard" Path="H:\Office2016\setup" />
 
   <!--  <Property Name="AUTOACTIVATE" Value="1" />  -->
 
