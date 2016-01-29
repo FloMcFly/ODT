@@ -1,6 +1,6 @@
 <Configuration>
 
-  <Add SourcePath="H:\Office2016\setup\Source" OfficeClientEdition="32" >
+  <Add SourcePath="Source" OfficeClientEdition="32" >
     <Product ID="O365ProPlusRetail">
       <Language ID="de-de" />
     </Product>
@@ -10,7 +10,7 @@
 
   <Display Level="None" AcceptEULA="TRUE" />
 
-  <Logging Level="Standard" Path="H:\Office2016\setup" />
+  <Logging Level="Standard" Path="." />
 
   <Property Name="AUTOACTIVATE" Value="1" />
 
