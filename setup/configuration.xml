@@ -12,6 +12,6 @@
 
   <Logging Level="Standard" Path="H:\Office2016\setup" />
 
-  <!--  <Property Name="AUTOACTIVATE" Value="1" />  -->
+  <Property Name="AUTOACTIVATE" Value="1" />
 
 </Configuration>
