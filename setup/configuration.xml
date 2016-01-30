@@ -1,6 +1,6 @@
 <Configuration>
 
-  <Add SourcePath="Source" OfficeClientEdition="32" >
+  <Add SourcePath="Source\" OfficeClientEdition="32" >
     <Product ID="O365ProPlusRetail">
       <Language ID="de-de" />
     </Product>
@@ -8,7 +8,7 @@
 
   <!--  <Updates Enabled="TRUE" UpdatePath="\\Server\Share\Office\" /> -->
 
-  <Display Level="None" AcceptEULA="TRUE" />
+  <Display Level="Full" AcceptEULA="TRUE" />
 
   <Logging Level="Standard" Path="." />
 
