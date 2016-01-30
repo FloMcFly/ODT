@@ -4,7 +4,7 @@
 
 [Reference for Click-to-Run configuration.xml file](https://technet.microsoft.com/en-US/library/jj219426.aspx)
 
-A little script to automate the download of the Office 2016 AppV Package.
+A little script to automate the download of the Office 2016 AppV Package. The files will be located at "%USERPROFILE%\Downloads\ODT-master\setup\output" by default.
 
 Installation:
 ```PowerShell
