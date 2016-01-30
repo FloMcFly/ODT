@@ -1,4 +1,4 @@
-cd C:\Users\Public\Downloads\ODT-master
+cd %USERPROFILE%\Downloads\ODT-master
 rmdir output /S /Q
 rmdir source /S /Q
 mkdir output
