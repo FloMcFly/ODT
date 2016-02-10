@@ -9,5 +9,5 @@ A little script to automate the download of the Office 2016 AppV Package. The fi
 Installation:
 ```PowerShell
 Invoke-WebRequest -Uri "https://github.com/FloMcFly/ODT/archive/master.zip" -OutFile $env:USERPROFILE\Downloads\odt.zip
-Expand-Archive -Path $env:USERPROFILE\Downloads\odt.zip -DestinationPath $env:USERPROFILE\Downloads
+Expand-Archive -Path $env:USERPROFILE\Downloads\odt.zip -DestinationPath $env:USERPROFILE\Downloads -Force
 ```
