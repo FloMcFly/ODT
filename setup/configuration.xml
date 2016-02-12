@@ -1,6 +1,6 @@
 <Configuration>
 
-  <Add SourcePath="C:\Users\xce35b0\Downloads\ODT-master\Setup\Source\" OfficeClientEdition="32" >
+  <Add SourcePath="%USERPROFILE%\Downloads\ODT-master\Setup\Source\" OfficeClientEdition="32" >
     <Product ID="O365ProPlusRetail">
       <Language ID="de-de" />
     </Product>
@@ -10,10 +10,10 @@
 
   <Display Level="None" AcceptEULA="TRUE" />
 
-  <Logging Level="Standard" Path="C:\Users\xce35b0\Downloads\ODT-master\Setup" />
+  <Logging Level="Standard" Path="%USERPROFILE%\Downloads\ODT-master\Setup" />
 
   <Property Name="AUTOACTIVATE" Value="1" />
-  
+
   <Property Name="SharedComputerLicensing" Value="1" />
 
 </Configuration>
