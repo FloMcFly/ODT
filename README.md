@@ -4,9 +4,9 @@
 
 [Reference for Click-to-Run configuration.xml file](https://technet.microsoft.com/en-US/library/jj219426.aspx)
 
-A little script to automate the download of the Office 2016 AppV Package. The files will be located at "%USERPROFILE%\Downloads\ODT-master\setup\output" by default.
+A little script to automate the download of the Office 2016 AppV Package for RDS Deployment. The files will be located at "%USERPROFILE%\Downloads\ODT-master\setup\output" by default.
 
-Installation:
+Download (PowerShell v5):
 ```PowerShell
 Invoke-WebRequest -Uri "https://github.com/FloMcFly/ODT/archive/master.zip" -OutFile $env:USERPROFILE\Downloads\odt.zip
 Expand-Archive -Path $env:USERPROFILE\Downloads\odt.zip -DestinationPath $env:USERPROFILE\Downloads -Force
