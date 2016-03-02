@@ -1,4 +1,7 @@
-﻿$input = "$PSScriptRoot\O365ProPlusRetail_de-de_x86_DeploymentConfig.xml"
+param(
+    [Parameter(Mandatory=$true)]
+    $Input
+)
 
 # Read xml file
 if (Test-Path $input){
@@ -19,7 +22,12 @@ $config_file.DeploymentConfiguration.UserConfiguration.Subsystems.FileTypeAssoci
 #$reg_keys = $config_file.DeploymentConfiguration.UserConfiguration.Subsystems.Registry.Include.Key
 
 # Disable Applications (based on Blacklist)
-$blacklist = @('[{AppVPackageRoot}]\Office16\GROOVE.EXE',`    '[{AppVPackageRoot}]\Office16\lync.exe',`    '[{AppVPackageRoot}]\Office16\MSOUC.EXE',`    '[{AppVPackageRoot}]\Office16\MSPUB.EXE',`    '[{AppVPackageRoot}]\Office16\OcPubMgr.exe',`    '[{AppVPackageRoot}]\Office16\OMSMAIN.DLL',`
+$blacklist = @('[{AppVPackageRoot}]\Office16\GROOVE.EXE',`
+    '[{AppVPackageRoot}]\Office16\lync.exe',`
+    '[{AppVPackageRoot}]\Office16\MSOUC.EXE',`
+    '[{AppVPackageRoot}]\Office16\MSPUB.EXE',`
+    '[{AppVPackageRoot}]\Office16\OcPubMgr.exe',`
+    '[{AppVPackageRoot}]\Office16\OMSMAIN.DLL',`
     '[{AppVPackageRoot}]\Office16\OUTLOOK.EXE')
 
 $config_file.DeploymentConfiguration.UserConfiguration.Applications.Application | ForEach-Object { if ($blacklist -contains $_.Id){ $_.Enabled = 'false' }}
