@@ -1,14 +1,14 @@
 param(
     [Parameter(Mandatory=$true)]
-    $Input
+    $Path
 )
 
 # Read xml file
-if (Test-Path $input){
-    $config_file = [xml] (Get-Content $input)
+if (Test-Path $Path){
+    $config_file = [xml] (Get-Content $Path)
 }
 else{
-    Write-Host -ForegroundColor Red "$input not found"
+    Write-Host -ForegroundColor Red "$Path not found"
     Exit 1
 }
 
@@ -33,7 +33,7 @@ $blacklist = @('[{AppVPackageRoot}]\Office16\GROOVE.EXE',`
 $config_file.DeploymentConfiguration.UserConfiguration.Applications.Application | ForEach-Object { if ($blacklist -contains $_.Id){ $_.Enabled = 'false' }}
 
 # Backup original xml file
-Copy-Item -Path $input -Destination "$input.bak"
+Copy-Item -Path $Path -Destination "$Path.bak"
 
 # Save new xml file
-$config_file.Save($input)
+$config_file.Save($Path)
