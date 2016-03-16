@@ -6,7 +6,6 @@
       <ExcludeApp ID="Groove" />
       <ExcludeApp ID="Lync" />
       <ExcludeApp ID="Outlook" />
-      <ExcludeApp ID="OneDrive" />
     </Product>
   </Add>
 
