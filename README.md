@@ -1,7 +1,5 @@
 # Office 2016 Deployment Tool
 
-AT THE MOMENT THERE IS A BUG IN THE OFFICE 2016 DEPLOYMENT TOOL BY MICROSOFT! (as of 04/08/2016)
-
 [Office 2016 Deployment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49117)
 
 [Reference for Click-to-Run configuration.xml file](https://technet.microsoft.com/en-US/library/jj219426.aspx)
